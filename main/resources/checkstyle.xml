@@ -1,0 +1,7 @@
+<!DOCTYPE module PUBLIC
+        "-//Puppy Crawl//DTD Check Configuration 1.3//EN"
+        "http://www.puppycrawl.com/dtds/configuration_1_3.dtd">
+<module name="Checker">
+    <!-- Add this empty checkstyle file here because
+         HappierTrails 3.5 does not support the checkstyle file provided by RDSHappierTrails 3.3-->
+</module>

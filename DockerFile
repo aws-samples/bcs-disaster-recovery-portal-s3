@@ -1,0 +1,7 @@
+# FROM openjdk:11-jre-slim
+# 204 MB
+FROM adoptopenjdk/openjdk11:alpine-jre
+# 147 MB
+RUN  mkdir -p /opt/drportal/s3
+COPY lib/* /opt/drportal/s3/
+CMD  java -cp $(echo /opt/drportal/s3/*.jar | tr ' ' ':') aws.proserve.bcs.dr.s3.ReplicateBucket
